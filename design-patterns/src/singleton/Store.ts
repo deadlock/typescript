@@ -1,7 +1,5 @@
 import Logger from './Logger'
 
-var logger = Logger.getInstance();
-
 interface Inventory {
     item: string;
     qty: number;
@@ -15,7 +13,7 @@ class Store {
     constructor(name: string, inventory: Inventory[]) {
         this.name = name;
         this.inventory = inventory;
-        logger.log(`New Store: ${name} has ${inventory.length} items in stock.`);
+        Logger.log(`New Store: ${name} has ${inventory.length} items in stock.`);
     }
 
 }

@@ -2,12 +2,10 @@ import Logger from "./Logger";
 import Shopper from "./Shopper";
 import Store from "./Store";
 
-const logger = Logger.getInstance();
+Logger.log("starting app...");
 
-logger.log("starting app...");
-
-let alex = new Shopper("alex", 500);
-let ski_shop = new Store("Steep and Deep Supplies", [
+new Shopper("alex", 500);
+new Store("Steep and Deep Supplies", [
   {
     item: "Downhill Skis",
     qty: 5,
@@ -20,7 +18,7 @@ let ski_shop = new Store("Steep and Deep Supplies", [
   },
 ]);
 
-logger.log("finished config...");
+Logger.log("finished config...");
 
-console.log(`${logger.count} logs total`);
-logger.logs.map((log) => console.log(`   ${log.message}`));
+console.log(`${Logger.count} logs total`);
+Logger.logs.map((log) => console.log(`   ${log.message}`));
