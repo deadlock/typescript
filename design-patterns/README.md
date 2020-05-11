@@ -1,0 +1,71 @@
+## GOF Design Patterns
+
+### Creational
+
+Creational design patterns have todo with class instantiation, the creation of object instances in our applications.
+
+- #### Singleton
+
+When you want to make sure that one and just one instante of an object exists.
+
+- #### Abstract Factory
+- #### Builder
+- #### Factory Method
+- #### Prototype
+- #### Singleton
+
+### Structural
+
+Structural design patterns have todo with the way objectes are composed or put together.
+
+- Adapter
+- Bridge
+- Composite
+- Decorator
+- Facade
+- Flyweight
+- Proxy
+
+### Behavioral
+
+Behavioral design patterns define how objects interact with one another.
+
+- Chain of responsability
+- Command
+- Interpreter
+- Iterator
+- Mediator
+- Memento
+- Observer
+- State
+- Strategy
+- Template Method
+- Visitor
+
+## Javascript / Node  Anti-Patterns
+
+Modifying the prototype on an instance
+```
+person.__proto__.adress = {}
+```
+
+Callback hell
+```
+readFile( ..., () => {
+  parseData( ..., () => {
+    writeFile( ..., () => {
+      logResponse( ..., () => {      
+      })
+    })
+  })
+})
+```
+
+Syncing execution after initialization
+```
+listen() {
+  fs.readFileSunc( ...)
+}
+```
+
+
