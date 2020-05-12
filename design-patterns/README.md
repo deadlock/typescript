@@ -57,8 +57,11 @@ Convert the interface of a class into another clients expect. Adapter lets class
 
 Provide a surrogate or placeholder for another object control access to it.
 
-- #### Bridge
 - #### Composite
+
+Compose objects into tree structures to represent part-whole hierarchies. Composite lets clientes treat individual objects and compositions of objects uniformly
+
+- #### Bridge
 - #### Decorator
 - #### Facade
 - #### Flyweight
