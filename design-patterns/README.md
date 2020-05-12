@@ -51,13 +51,18 @@ Structural design patterns have todo with the way objectes are composed or put t
 
 - #### Adapter
 
+Convert the interface of a class into another clients expect. Adapter lets classes work together that couldn't otherwise beacuse on incompatible interfaces.
+
+- #### Proxy
+
+Provide a surrogate or placeholder for another object control access to it.
 
 - #### Bridge
 - #### Composite
 - #### Decorator
 - #### Facade
 - #### Flyweight
-- #### Proxy
+
 
 ### Behavioral
 
