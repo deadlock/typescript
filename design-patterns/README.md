@@ -28,6 +28,8 @@ export default Logger.getInstance();
 ```
 
 - #### Abstract Factory
+
+
 - #### Builder
 
 Separate the construction of a complex object from its representation so that the same construction process can create different representations.
@@ -47,13 +49,15 @@ Specify the kinds of objects to create using prototypal instance and create new 
 
 Structural design patterns have todo with the way objectes are composed or put together.
 
-- Adapter
-- Bridge
-- Composite
-- Decorator
-- Facade
-- Flyweight
-- Proxy
+- #### Adapter
+
+
+- #### Bridge
+- #### Composite
+- #### Decorator
+- #### Facade
+- #### Flyweight
+- #### Proxy
 
 ### Behavioral
 
