@@ -29,7 +29,13 @@ export default Logger.getInstance();
 
 - #### Abstract Factory
 - #### Builder
+
+Separate the construction of a complex object from its representation so that the same construction process can create different representations.
+
 - #### Factory Method
+
+Define an interface for creating an object, but let the subclasses decide which class to instantiate. Factory Method lets a class defer instantiation to subclasses.
+
 - #### Prototype
 
 Specify the kinds of objects to create using prototypal instance and create new objects by copying this prototype.
