@@ -8,25 +8,6 @@ Creational design patterns have todo with class instantiation, the creation of o
 
 When you want to make sure that one and just one instante of an object exists.
 
-Example:
-```
-class Logger {
- 
-  private static instance: Logger;
-
-  private constructor() {}
-
-  public static getInstance(): Logger {
-    if (!Logger.instance) {
-      return (Logger.instance = new Logger());
-    }
-    return Logger.instance;
-  }
-
-}
-export default Logger.getInstance();
-```
-
 - #### Abstract Factory
 
 
@@ -41,9 +22,6 @@ Define an interface for creating an object, but let the subclasses decide which 
 - #### Prototype
 
 Specify the kinds of objects to create using prototypal instance and create new objects by copying this prototype.
-
-```
-```
 
 ### Structural
 
@@ -61,8 +39,11 @@ Provide a surrogate or placeholder for another object control access to it.
 
 Compose objects into tree structures to represent part-whole hierarchies. Composite lets clientes treat individual objects and compositions of objects uniformly
 
-- #### Bridge
 - #### Decorator
+
+Attach additional responsabilities to an object dynamically. Decorators provide a flexible alternative to subclassing for extending functionality.
+
+- #### Bridge
 - #### Facade
 - #### Flyweight
 
