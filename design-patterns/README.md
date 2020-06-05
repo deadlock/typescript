@@ -10,8 +10,7 @@ When you want to make sure that one and just one instante of an object exists.
 
 - #### Abstract Factory
 
-
-- #### Builder
+* #### Builder
 
 Separate the construction of a complex object from its representation so that the same construction process can create different representations.
 
@@ -47,13 +46,18 @@ Attach additional responsabilities to an object dynamically. Decorators provide 
 - #### Facade
 - #### Flyweight
 
-
 ### Behavioral
 
 Behavioral design patterns define how objects interact with one another.
 
-- Chain of responsability
-- Command
+- #### Chain of responsability
+
+Avoid coupling the sender of a request to its reciever by giving more than one object a chance to handle the request. Chain the receiving objects and pass the request along the chain.
+
+- ### Command
+
+Encapsulate a request as an objext, thereby letting you parameterize with different requests, queue or log requests, and support undoable operations.
+
 - Interpreter
 - Iterator
 - Mediator
@@ -64,19 +68,21 @@ Behavioral design patterns define how objects interact with one another.
 - Template Method
 - Visitor
 
-## Javascript / Node  Anti-Patterns
+## Javascript / Node Anti-Patterns
 
 Modifying the prototype on an instance
+
 ```
 person.__proto__.adress = {}
 ```
 
 Callback hell
+
 ```
 readFile( ..., () => {
   parseData( ..., () => {
     writeFile( ..., () => {
-      logResponse( ..., () => {      
+      logResponse( ..., () => {
       })
     })
   })
@@ -84,10 +90,9 @@ readFile( ..., () => {
 ```
 
 Syncing execution after initialization
+
 ```
 listen() {
   fs.readFileSunc( ...)
 }
 ```
-
-
