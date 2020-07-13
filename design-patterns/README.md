@@ -54,19 +54,22 @@ Behavioral design patterns define how objects interact with one another.
 
 Avoid coupling the sender of a request to its reciever by giving more than one object a chance to handle the request. Chain the receiving objects and pass the request along the chain.
 
-- ### Command
+- #### Command
 
 Encapsulate a request as an objext, thereby letting you parameterize with different requests, queue or log requests, and support undoable operations.
 
-- ### Iterator
+- #### Iterator
 
 Provide a way to access the elements of an aggregate object sequentially without exposing its underlying representation
 
+- #### Observer
+
+Define a one-to-many dependency between objects so that when one object changes state, all its dependents are notified and updated automatically
 
 - Interpreter
 - Mediator
 - Memento
-- Observer
+
 - State
 - Strategy
 - Template Method
