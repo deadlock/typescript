@@ -2,6 +2,7 @@ import { InventoryInterface, ItemInterface, StorageInterface } from "./types";
 
 
 class Storage implements StorageInterface {
+  
   constructor(
     public name: string,
     public inventory: InventoryInterface,

@@ -1,5 +1,4 @@
 import { CommandInterface, UndoableCommandInterface } from "./types";
-import { CreateCommand } from "./commands";
 
 class Conductor {
   constructor(

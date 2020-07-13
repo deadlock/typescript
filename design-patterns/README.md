@@ -58,8 +58,12 @@ Avoid coupling the sender of a request to its reciever by giving more than one o
 
 Encapsulate a request as an objext, thereby letting you parameterize with different requests, queue or log requests, and support undoable operations.
 
+- ### Iterator
+
+Provide a way to access the elements of an aggregate object sequentially without exposing its underlying representation
+
+
 - Interpreter
-- Iterator
 - Mediator
 - Memento
 - Observer
